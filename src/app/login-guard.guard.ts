@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from '@angular/router';
 import { Observable } from 'rxjs';
 import {LoginServiceService} from './login-service.service';
 
@@ -7,7 +7,7 @@ import {LoginServiceService} from './login-service.service';
   providedIn: 'root'
 })
 export class LoginGuardGuard implements CanActivate {
-  constructor(public loginService: LoginServiceService) {
+  constructor(public loginService: LoginServiceService, private route: Router) {
   }
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -18,6 +18,7 @@ export class LoginGuardGuard implements CanActivate {
     }
     else {
       alert('Először jelentkezzen be!');
+      this.route.navigate(['login']);
       return false;
     }
   }

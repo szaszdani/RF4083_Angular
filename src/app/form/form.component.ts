@@ -14,9 +14,19 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  save(): void{
-    this.service.array.push(this.adat);
-    this.adat = new MyAdat();
+  save(): boolean{
+    if (this.adat.name.length > 5 && this.adat.year_established > 0 && this.adat.year_established < 2021 && this.adat.country.length > 5 && this.adat.url.length > 8)
+    {
+      this.service.array.push(this.adat);
+      this.adat = new MyAdat();
+      alert('Sikeresen hozáadta a listához!');
+      return true;
+    }
+    else
+    {
+      alert('Kérem adjon meg helyes adatokat!');
+      return false;
+    }
   }
 
 }

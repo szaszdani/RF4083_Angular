@@ -1,1 +1,16 @@
-<p>list works!</p>
+<table>
+  <thead>
+    <th>Név</th>
+    <th>Létrehozás éve</th>
+    <th>Ország</th>
+    <th>Elérési hely</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let adat of service.array">
+      <td>{{adat.name}}</td>
+      <td>{{adat.year_established}}</td>
+      <td>{{adat.country}}</td>
+      <td>{{adat.url}}</td>
+    </tr>
+  </tbody>
+</table>

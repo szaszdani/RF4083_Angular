@@ -7,7 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import {MatButtonModule} from "@angular/material/button";
 import { ListComponent } from './list/list.component';
 import { FormComponent } from './form/form.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {FormsModule} from "@angular/forms";
         BrowserModule,
         AppRoutingModule,
         MatButtonModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]

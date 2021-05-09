@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {MatButtonModule} from "@angular/material/button";
 import { ListComponent } from './list/list.component';
 import { FormComponent } from './form/form.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormComponent } from './form/form.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        MatButtonModule
+        MatButtonModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

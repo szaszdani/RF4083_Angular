@@ -14,7 +14,6 @@ export class LoginGuardGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     if (this.loginService.loggedIn)
     {
-      alert('Sikeresen bejelentkezett!');
       return true;
     }
     else {

@@ -12,13 +12,11 @@ const routes: Routes = [
   },
   {
     path: 'list',
-    component: ListComponent,
-    canActivate: [LoginGuardGuard]
+    component: ListComponent
   },
   {
     path: 'form',
-    component: FormComponent,
-    canActivate: [LoginGuardGuard]
+    component: FormComponent
   }
 ];
 

@@ -1,1 +1,15 @@
-<p>form works!</p>
+<form>
+  <label>Neve</label>
+  <input type="text" name="nameInput" id="nameInput" placeholder="Adjon meg egy nevet" [(ngModel)]="adat.name">
+  <br />
+  <label>Létrehozás éve</label>
+  <input type="number" name="yearInput" id="yearInput" placeholder="Adjon meg egy létrehozási évet" [(ngModel)]="adat.year_established">
+  <br />
+  <label>Ország</label>
+  <input type="text" name="countryInput" id="countryInput" placeholder="Adjon meg egy országot" [(ngModel)]="adat.country">
+  <br />
+  <label>URL link:</label>
+  <input type="text" name="urlInput" id="urlInput" placeholder="Adjon meg egy URL linket" [(ngModel)]="adat.url">
+  <br />
+  <button type="submit" (click)="save()">Hozzáadás</button>
+</form>

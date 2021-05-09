@@ -11,6 +11,6 @@ export class ListServiceService {
   constructor(private http: HttpClient) { }
 
   public fetch(): Observable<any> {
-    return this.http.get('https://api.coingecko.com/api/v3/exchanges?per_page=100');
+    return this.http.get('https://api.coingecko.com/api/v3/exchanges?per_page=25');
   }
 }

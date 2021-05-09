@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     }
     else
     {
-      alert('Hibás felhasználónév!');
+      alert('Hibás felhasználónév vagy jelszó!');
     }
   }
 

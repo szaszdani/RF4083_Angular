@@ -1,15 +1,19 @@
 <form>
-  <label>Neve</label>
-  <input type="text" name="nameInput" id="nameInput" placeholder="Adjon meg egy nevet" [(ngModel)]="adat.name">
-  <br />
-  <label>Létrehozás éve</label>
-  <input type="number" name="yearInput" id="yearInput" placeholder="Adjon meg egy létrehozási évet" [(ngModel)]="adat.year_established">
-  <br />
-  <label>Ország</label>
-  <input type="text" name="countryInput" id="countryInput" placeholder="Adjon meg egy országot" [(ngModel)]="adat.country">
-  <br />
-  <label>URL link:</label>
-  <input type="text" name="urlInput" id="urlInput" placeholder="Adjon meg egy URL linket" [(ngModel)]="adat.url">
-  <br />
-  <button type="submit" (click)="save()">Hozzáadás</button>
+  <div class="form-group">
+    <label>Neve:</label>
+    <input class="form-control" type="text" name="nameInput" id="nameInput" placeholder="Adjon meg egy nevet" [(ngModel)]="adat.name">
+  </div>
+  <div class="form-group">
+    <label>Létrehozás éve:</label>
+    <input class="form-control" type="number" name="yearInput" id="yearInput" placeholder="Adjon meg egy létrehozási évet" [(ngModel)]="adat.year_established">
+  </div>
+  <div class="form-group">
+    <label>Ország:</label>
+    <input class="form-control" type="text" name="countryInput" id="countryInput" placeholder="Adjon meg egy országot" [(ngModel)]="adat.country">
+  </div>
+  <div class="form-group">
+    <label>URL link:</label>
+    <input class="form-control" type="text" name="urlInput" id="urlInput" placeholder="Adjon meg egy URL linket" [(ngModel)]="adat.url">
+  </div>
+  <button class="btn btn-primary" type="submit" (click)="save()">Hozzáadás</button>
 </form>

@@ -1,7 +1,12 @@
-<button mat-raised-button routerLink="login">Belépés</button>
-<button mat-raised-button routerLink="list">List</button>
-<button mat-raised-button routerLink="form">Új adat felvitele</button>
+<div class="row p-5 text-center">
+  <div class="col p-1"><h3>Szász Dániel - RF4083 - Angular beadandó</h3></div>
+</div>
+<div class="row p-3 text-center">
+  <div class="col"><button class="btn btn-primary" routerLink="login">Belépés</button></div>
+  <div class="col"><button class="btn btn-primary" routerLink="list">Lista</button></div>
+  <div class="col"><button class="btn btn-primary" routerLink="form">Új adat felvitele</button></div>
+</div>
 
-<div class="container">
+<div class="container p-5 text-center">
   <router-outlet></router-outlet>
 </div>

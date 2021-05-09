@@ -1,4 +1,4 @@
-<table>
+<table class="table">
   <thead>
     <th>Név</th>
     <th>Létrehozás éve</th>
@@ -11,7 +11,7 @@
       <td>{{adat.year_established}}</td>
       <td>{{adat.country}}</td>
       <td>{{adat.url}}</td>
-      <td><button (click)="delRow(adat.name)">Törlés</button></td>
+      <td><button class="btn btn-primary" (click)="delRow(adat.name)">Törlés</button></td>
     </tr>
   </tbody>
 </table>
